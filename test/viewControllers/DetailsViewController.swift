@@ -9,23 +9,32 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
+    
+    
+    //vars
+    
+    var screenTitle:String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
-        
-        print("DetailsViewController.viewDidLoad")
+        print("DetailsViewController.viewDidLoad \(screenTitle)")
 
         // Do any additional setup after loading the view.
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+       
         print("viewWillDisappear.DetailsViewController")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+         self.title = screenTitle
+        
         print("viewWillAppear.DetailsViewController")
     }
 

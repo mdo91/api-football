@@ -51,6 +51,8 @@ extension ViewController{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let DetailsController =  DetailsViewController(nibName: "DetailsViewController", bundle: nil)
+        //Details
+        DetailsController.screenTitle = "Details"
         self.show(DetailsController, sender: self)
         
         
