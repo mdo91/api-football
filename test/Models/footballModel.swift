@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+
+struct competitions {
+     var name = ""
+     var code = ""
+     var plan = ""
+     var numberOfAvailableSeasons = ""
+}

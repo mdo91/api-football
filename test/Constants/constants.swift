@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import Alamofire
+//MARK: - Service url
+
+ let url = "http://api.football-data.org/v2/competitions"
+
+let headers: HTTPHeaders = [
+    "Authorization": "Basic e938990585bd40a2b6bdcd0fc92c6b2e",
+    "Accept": "application/json"
+]
+
+//MARK: - arrays
+
+var mainCompetitionData : [competitions] = []
